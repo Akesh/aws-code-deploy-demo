@@ -1,11 +1,15 @@
 version: 0.0
 os: linux
 files:
-     -source: /target/
-     destination: /usr/local/tomcat/webapps
+     - source: target/
+     destination: /mywebapp/
 hooks:
   BeforeInstall:
     - location: /scripts/before-install.sh    
       runas: root
     - location: /scripts/startserver.sh
       runas: root
+  Install:
+      -location:/scripts/install.sh
+       runas:root
+  
