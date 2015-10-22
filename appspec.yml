@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-     - source: target/
+     -source: target/
      destination: /mywebapp/
 hooks:
   BeforeInstall:
@@ -10,6 +10,6 @@ hooks:
     - location: /scripts/startserver.sh
       runas: root
   Install:
-      -location:/scripts/install.sh
-       runas:root
+    - location:/scripts/install.sh
+      runas:root
   
