@@ -1,8 +1,10 @@
 version: 0.0
 os: linux
 files:
-     -source: target/
-     destination: /mywebapp/
+-source: ./target/ROOT.war 
+destination: /mywebapp/
+-source: ./target/ROOT/
+destination: /mywebapp/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
@@ -12,4 +14,3 @@ hooks:
   AfterInstall:
     - location: scripts/after-install.sh
       runas: root
-  
