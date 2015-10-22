@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
--source: target
+-source: target/ROOT.war
 destination: /usr/local/mywebapp
 permissions:
--object: /target
+-object: target/ROOT.war
 pattern: "**"
-type: -directory
+type: -file
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
