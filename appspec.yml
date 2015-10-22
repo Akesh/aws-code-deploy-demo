@@ -1,8 +1,10 @@
 version: 0.0
 os: linux
 files:
--source: ./pom.xml
+-source: ./Dockerfile
 destination: ./opt/codedeploy-agent/
+-source: target/ROOT.war
+destination: /var/lib/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
