@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
--source: ./Dockerfile
-destination: ./opt/codedeploy-agent/
+-source: /pom.xml
+destination: /usr/tmp/mywebapp_new
 -source: target/ROOT.war
 destination: /var/lib/
 hooks:
