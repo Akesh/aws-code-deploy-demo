@@ -1,14 +1,12 @@
 version: 0.0
 os: linux
 files:
--source: /opt/codedeploy-agent/deployment-root
+-source: target
 destination: /usr/local/mywebapp
 permissions:
--object: /opt/codedeploy-agent/deployment-root
-pattern: "**"
-owner: ec2-user
-mode: 777
-type: -directory
+    -object: /target
+    pattern: "**"
+    type: -directory
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
