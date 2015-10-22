@@ -1,10 +1,8 @@
 version: 0.0
 os: linux
 files:
--source: /pom.xml
-destination: /usr/tmp/mywebapp_new
 -source: target/ROOT.war
-destination: /var/lib/
+destination: /usr/local/mywebapp
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
