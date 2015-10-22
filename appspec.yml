@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
+files:
+     -source: /target/ROOT.war
+     destination: /usr/local/
 hooks:
   BeforeInstall:
     - location: /scripts/before-install.sh    
