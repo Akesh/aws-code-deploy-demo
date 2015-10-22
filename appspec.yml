@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-    -source: Dockerfile
-    destination: \mywebapp\
+    -source: /
+    destination: /mywebapp/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
