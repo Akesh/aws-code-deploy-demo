@@ -5,11 +5,11 @@ files:
      destination: /mywebapp/
 hooks:
   BeforeInstall:
-    - location: /scripts/before-install.sh    
+    - location: scripts/before-install.sh    
       runas: root
-    - location: /scripts/startserver.sh
+    - location: scripts/startserver.sh
       runas: root
   AfterInstall:
-    - location:/scripts/install.sh
+    - location: scripts/after-install.sh
       runas:root
   
