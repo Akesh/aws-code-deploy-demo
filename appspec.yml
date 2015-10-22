@@ -1,9 +1,7 @@
 version: 0.0
 os: linux
 files:
-    -source: .\Dockerfile
-    destination: \mywebapp\
-    -source: ./target
+    -source: .\target\
     destination: \mywebapp\
 hooks:
   BeforeInstall:
