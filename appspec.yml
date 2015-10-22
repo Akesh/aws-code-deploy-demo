@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
--source: ./Dockerfile
-destination: /mywebapp/
+-source: Dockerfile
+destination: /opt/codedeploy-agent/mywebapp/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
