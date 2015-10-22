@@ -3,6 +3,9 @@ os: linux
 files:
 -source: /deployment-root
 destination: /usr/local/mywebapp
+permissions:
+    -object: /deployment-root
+    pattern: "**"
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
