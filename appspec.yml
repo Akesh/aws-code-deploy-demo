@@ -1,12 +1,14 @@
 version: 0.0
 os: linux
 files:
--source: ./Dockerfile
-destination: /mywebapp/
+    -source: .\Dockerfile
+    destination: \mywebapp\
+    -source: ./target
+    destination: \mywebapp\
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
-      runas: ec2-user   
+      runas: root   
   AfterInstall:
     - location: scripts/after-install.sh
-      runas: ec2-user
+      runas: root
