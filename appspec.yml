@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
--source: /deployment-root
+-source: /opt/codedeploy-agent/deployment-root
 destination: /usr/local/mywebapp
 permissions:
--object: /deployment-root/
+-object: /opt/codedeploy-agent/deployment-root
 pattern: "**"
 owner: ec2-user
 mode: 777
