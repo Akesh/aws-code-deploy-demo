@@ -4,9 +4,9 @@ files:
 -source: target
 destination: /usr/local/mywebapp
 permissions:
-    -object: /target
-    pattern: "**"
-    type: -directory
+-object: /target
+pattern: "**"
+type: -directory
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
