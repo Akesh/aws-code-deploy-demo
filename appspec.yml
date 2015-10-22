@@ -1,8 +1,7 @@
 version: 0.0
 os: linux
-files:
 hooks:
   BeforeInstall:
-    - location: \Dockerfile
+    - location: /before-install.sh
       timeout: 300
       runas: root
