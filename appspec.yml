@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
--source: \
-destination: \opt\codedeploy-agent\mywebapp\
+-source: ./Dockerfile
+destination: /mywebapp/
 hooks:
   BeforeInstall:
     - location: scripts/before-install.sh    
-      runas: root   
+      runas: ec2-user   
   AfterInstall:
     - location: scripts/after-install.sh
-      runas: root
+      runas: ec2-user
