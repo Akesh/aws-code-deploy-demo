@@ -9,7 +9,7 @@ hooks:
       runas: root
     - location: /scripts/startserver.sh
       runas: root
-  Install:
+  AfterInstall:
     - location:/scripts/install.sh
       runas:root
   
